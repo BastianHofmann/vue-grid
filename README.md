@@ -2,7 +2,7 @@
 
 A vuejs component to render tables.
 
-This is a WIP do not use in produciton!
+This is a WIP do not use in production!
 
 ## Usage
 
