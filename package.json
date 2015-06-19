@@ -1,0 +1,8 @@
+{
+  "name": "vue-grid",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "html-browserify": "0.0.4"
+  }
+}
