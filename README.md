@@ -3,6 +3,10 @@
 A vuejs component to render tables.
 It obviously still lacks features, but everything should work correctly.
 
+## Install
+
+`npm install vue-grid`
+
 ## Usage
 
 ``` html
