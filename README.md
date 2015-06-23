@@ -11,6 +11,8 @@ It obviously still lacks features, but everything should work correctly.
 
 ## Usage
 
+Just include the `vue-grid.js` file. Also works with amd or browserify.
+
 ``` html
 <input type="text" v-model="searchQuery">
 <paginaiton id="my-table"></pagination>
