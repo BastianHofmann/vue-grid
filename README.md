@@ -1,15 +1,17 @@
 # Vue Grid Component
 
 A vuejs component to render tables.
-
-This is a WIP do not use in production!
+It obviously still lacks features, but everything should work correctly.
 
 ## Usage
 
 ``` html
 <input type="text" v-model="searchQuery">
-<grid rows="{{gridData}}" columns="{{gridColumns}}" filter-key="{{searchQuery}}" per-page="10"></grid>
+<paginaiton id="my-table"></pagination>
+<grid id="my-table" rows="{{gridData}}" columns="{{gridColumns}}" filter-key="{{searchQuery}}" per-page="10"></grid>
 ```
+
+The id property is an identifier, that connects the table to the pagination. So you can actually place your pagination in another area of the site (e.g. some sidebar).
 
 ``` javascript
 new Vue({
