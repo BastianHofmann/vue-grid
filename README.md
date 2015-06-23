@@ -6,6 +6,7 @@ It obviously still lacks features, but everything should work correctly.
 ## Install
 
 `npm install vue-grid`
+`bower install vue-grid`
 
 ## Usage
 
