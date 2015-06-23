@@ -1,0 +1,25 @@
+{
+  "name": "vue-grid",
+  "main": "vue-grid.js",
+  "version": "0.1.1",
+  "homepage": "https://github.com/BastianHofmann/vue-grid",
+  "authors": [
+    "Bastian Hofmann <bastianhofmann@me.com>"
+  ],
+  "description": "A table component for vue.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "vue",
+    "vue.js",
+    "grid",
+    "table"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+  ]
+}
