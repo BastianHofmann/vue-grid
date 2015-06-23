@@ -7,25 +7,164 @@
 <body>
   <div class="container">
     <div class="col-md-12">
-      <input type="text" v-model="searchQuery">
-      <grid rows="{{gridData}}" columns="{{gridColumns}}" filter-key="{{searchQuery}}" per-page="10"></grid>
+      <h1>Vue Grid</h1>
+      <div class="row">
+      <div class="col-md-6">
+        <label for="search-query"></label>
+        <input type="text" id="search-query" v-model="searchQuery" class="form-control" placeholder="Search..." style="width: 200px">
+      </div>
+      <div class="col-md-6">
+        <pagination id="my-table" class="pull-right"></pagination>
+      </div>
+      </div>
+      <grid rows="{{gridData}}" columns="{{gridColumns}}" filter-key="{{searchQuery}}" per-page="5" id="my-table"></grid>
+      <hr>
+      <grid rows="{{gridData2}}" columns="{{gridColumns2}}" per-page="10" id="another-table"></grid>
+      <pagination id="another-table"></pagination>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.12.1/vue.js"></script>
   <script src="../build/grid.js"></script>
 <script>
 
-new Vue({
+var vm = new Vue({
   el: 'body',
   data: function() {
     return {
       searchQuery: '',
-      gridColumns: ['name', 'power'],
+      gridColumns: ['name', 'age'],
       gridData: [
         { name: 'Barack Obama', age: 53 },
         { name: 'Some Dude', age: 24 },
+        { name: 'Tv Dude', age: 28 },
+        { name: 'Ice Dude', age: 34 },
+        { name: 'Mel Dude', age: 25 },
+        { name: 'Word Dude', age: 29 },
+        { name: 'Even Dude', age: 44 },
+        { name: 'More Dude', age: 54 },
+        { name: 'Thor Dude', age: 29 },
+        { name: 'Noel Dude', age: 26 },
+        { name: 'Tiffany Dude', age: 14 },
+        { name: 'Miranda Dude', age: 28 },
+        { name: 'Jeff Dude', age: 23 },
+        { name: 'Jack Dude', age: 54 },
+        { name: 'Jimmy Dude', age: 44 },
+        { name: 'Jon Dude', age: 34 },
         { name: 'Another Dude', age: 34 }
-        // ...
+      ],
+      gridColumns2: ['name'],
+      gridData2: [
+        {
+          name: 'Aaron'
+        },
+        {
+          name: 'Abdiel'
+        },
+        {
+          name: 'Abdul'
+        },
+        {
+          name: 'Abdullah'
+        },
+        {
+          name: 'Abe'
+        },
+        {
+          name: 'Abel'
+        },
+        {
+          name: 'Abelardo'
+        },
+        {
+          name: 'Abner'
+        },
+        {
+          name: 'Abraham'
+        },
+        {
+          name: 'Adalberto'
+        },
+        {
+          name: 'Adam'
+        },
+        {
+          name: 'Adan'
+        },
+        {
+          name: 'Adelbert'
+        },
+        {
+          name: 'Adolf'
+        },
+        {
+          name: 'Adolfo'
+        },
+        {
+          name: 'Adolph'
+        },
+        {
+          name: 'Adolphus'
+        },
+        {
+          name: 'Adonis'
+        },
+        {
+          name: 'Adrain'
+        },
+        {
+          name: 'Adrian'
+        },
+        {
+          name: 'Adriel'
+        },
+        {
+          name: 'Adrien'
+        },
+        {
+          name: 'Afton'
+        },
+        {
+          name: 'Agustin'
+        },
+        {
+          name: 'Ahmad'
+        },
+        {
+          name: 'Ahmed'
+        },
+        {
+          name: 'Aidan'
+        },
+        {
+          name: 'Aiden'
+        },
+        {
+          name: 'Akeem'
+        },
+        {
+          name: 'Al'
+        },
+        {
+          name: 'Alan'
+        },
+        {
+          name: 'Albert'
+        },
+        {
+          name: 'Alberto'
+        },
+        {
+          name: 'Albin'
+        },
+        {
+          name: 'Alden'
+        },
+        {
+          name: 'Alec'
+        },
+        {
+          name: 'Alejandrin'
+        }
       ]
     };
   }

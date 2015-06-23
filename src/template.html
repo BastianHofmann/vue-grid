@@ -15,18 +15,3 @@
     </tr>
   </tbody>
 </table>
-<nav>
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous" v-on="click: page--">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li v-repeat="pageCount" v-class="active: page == $index"><a href="#" v-on="click: page = $index">{{$index + 1}}</a></li>
-    <li>
-      <a href="#" aria-label="Next" v-on="click: page++">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
